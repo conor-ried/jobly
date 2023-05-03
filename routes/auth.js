@@ -35,7 +35,13 @@ router.post("/token", async function (req, res, next) {
     return next(err);
   }
 });
-
+// {
+//   "username": "bofry",
+//   "password": "boyyyyyyyy234"
+// }
+// {
+// 	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvZnJ5IiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjgzMDYxMjc2fQ.W1Ztw_yxTIzXDxPFqcFYce7ox-XvSgOWWt-0cQAz-i8"
+// }
 
 /** POST /auth/register:   { user } => { token }
  *
@@ -62,5 +68,16 @@ router.post("/register", async function (req, res, next) {
   }
 });
 
+// http://localhost:3001/auth/register 
+
+//       {"username": "bfhgobbuy",
+//   "password": "boboighfouubo234",
+//   "firstName": "samyhgfuuyyy",
+//   "lastName": "lammmfhguummy",
+//   "email":  "ieatchickeuunnfghuggets@aol.com"
+// }
+// {
+// 	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJmaGdvYmJ1eSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2ODMwNTkyNDR9.XwYL-iRcIpMCJUcv4nsiG_ShLx1cP3eS5GQHFG_rNqg"
+// }
 
 module.exports = router;
